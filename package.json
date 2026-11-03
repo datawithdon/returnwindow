@@ -1,0 +1,12 @@
+{
+  "name": "returnwindow",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Return-window and warranty tracker: snap a receipt, get the return-by date from the store's policy (25 US retailers), track warranties and draft claim emails. Static web app, no backend.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "start": "python3 -m http.server 8000 --bind 127.0.0.1"
+  },
+  "license": "MIT"
+}

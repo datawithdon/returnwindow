@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data: blob:; connect-src 'self' https://api.anthropic.com; font-src 'self'; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'; frame-src 'none'">
+  <meta name="referrer" content="no-referrer">
+  <meta name="description" content="ReturnWindow: snap a receipt and get the return-by date from the store's own policy, plus warranty tracking and ready-to-send claim emails. Runs in your browser; your data stays on your device.">
+  <meta name="theme-color" content="#0f766e">
+  <title>ReturnWindow</title>
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/styles.css">
+  <script type="module" src="js/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#/timeline"><img src="icons/icon.svg" alt="" width="28" height="28">ReturnWindow</a>
+      <nav aria-label="Main">
+        <a href="#/timeline" data-view="timeline">Timeline <span id="nav-urgent" class="badge urgent hidden"></span></a>
+        <a href="#/add" data-view="add">Add</a>
+        <a href="#/stores" data-view="stores">Stores</a>
+        <a href="#/settings" data-view="settings">Settings</a>
+      </nav>
+    </div>
+  </header>
+  <main id="view" tabindex="-1"><p class="empty">Loading…</p></main>
+  <div id="modal" class="modal hidden"></div>
+  <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+  <footer>ReturnWindow stores your purchases and receipt photos only in this browser. Return policies were checked on each retailer's website and can change. Confirm with the store before a close call. Not affiliated with any retailer.</footer>
+  <noscript><p class="empty">ReturnWindow needs JavaScript.</p></noscript>
+</body>
+</html>
