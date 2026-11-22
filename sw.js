@@ -1,10 +1,10 @@
 // Offline shell: same-origin files are served cache-first and refreshed in the
 // background. Cross-origin requests (the Claude API) are never cached here.
 
-const CACHE = "returnwindow-v1";
+const CACHE = "returnwindow-v2";
 const SHELL = [
   "./", "index.html", "manifest.webmanifest", "css/styles.css", "icons/icon.svg",
-  "js/app.js", "js/dom.js", "js/dates.js", "js/retailers.js", "js/policy.js", "js/parse.js", "js/store.js",
+  "js/app.js", "js/tt.js", "js/dom.js", "js/dates.js", "js/retailers.js", "js/policy.js", "js/parse.js", "js/store.js",
   "js/photos.js", "js/ocr.js", "js/ai.js", "js/notify.js", "js/claims.js", "js/ui.js",
   "js/views/timeline.js", "js/views/add.js", "js/views/purchase.js", "js/views/stores.js", "js/views/settings.js",
   "vendor/tesseract/tesseract.esm.min.js", "vendor/tesseract/worker.min.js",

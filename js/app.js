@@ -1,5 +1,6 @@
 // Entry point: hash router, nav badge, reminders, service worker.
 
+import "./tt.js"; // first: Trusted Types policy
 import { $, $$ } from "./dom.js";
 import { checkReminders, urgentCount } from "./notify.js";
 import { load, onChange } from "./store.js";
